@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #72ECE9;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    text-align: center;
+}
+.containier {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+.rules {
+    font-weight: bold;
+}
+#crystal-grid {
+    margin: 35px;
+}
