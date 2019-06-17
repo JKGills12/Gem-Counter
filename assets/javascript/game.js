@@ -30,3 +30,7 @@ for(var i = 0; i < 4; i++) {
     $(".crystals").append(crystal);
 }
 
+// onClick event for crystals
+$(".crystal").on('click', function () {
+    console.log($(this).attr('data-random'));
+})
