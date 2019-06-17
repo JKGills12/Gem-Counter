@@ -13,12 +13,12 @@ var win;
 
 randomResult = Math.floor(Math.random() * 69) + 30; 
 
-$("result").html('Random Results: ' + randomResult);
+$("#results").html('Random Result: ' + randomResult);
 
 
 // Generates random number for crystals
 for(var i = 0; i < 4; i++) {
-    var random = Math.floor(Math.random() * 12);
+    var random = Math.floor(Math.random() * 11) +1;
     // console.log(random);
 
     var crystal = $("<div>");
