@@ -10,6 +10,7 @@
 var randomResult;
 var lose;
 var win;
+var previous = 0;
 
 randomResult = Math.floor(Math.random() * 69) + 30; 
 
@@ -32,5 +33,16 @@ for(var i = 0; i < 4; i++) {
 
 // onClick event for crystals
 $(".crystal").on('click', function () {
-    console.log($(this).attr('data-random'));
-})
+    
+    var num = parseInt($(this).attr('data-random'));
+
+    previous += num;
+
+    if(previous > randomResult){
+        console.log("Sorry, you lost!");
+    } 
+    else if(previous === randomResult){
+        console.log("Congrats! You win!");
+    }
+   
+});
