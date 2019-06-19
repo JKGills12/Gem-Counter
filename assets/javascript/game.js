@@ -12,43 +12,65 @@ var lose =0;
 var win =0;
 var previous = 0;
 
-randomResult = Math.floor(Math.random() * 69) + 30; 
+var resetAndStart = function () {
 
-$("#results").html('Random Result: ' + randomResult);
+    $(".crystals").empty();
+
+    randomResult = Math.floor(Math.random() * 69) + 30; 
+
+    $("#results").html('Random Result: ' + randomResult);
 
 
-// Generates random number for crystals
-for(var i = 0; i < 4; i++) {
-    var random = Math.floor(Math.random() * 11) +1;
-    // console.log(random);
+    // Generates random number for crystals
+    for(var i = 0; i < 4; i++) {
+        var random = Math.floor(Math.random() * 11) +1;
+        // console.log(random);
 
-    var crystal = $("<div>");
-        crystal.attr({
-            "class": 'crystal',
-            "data-random": random
-        });
+        var crystal = $("<div>");
+            crystal.attr({
+                "class": 'crystal',
+                "data-random": random
+            });
 
-        crystal.html(random)
-    $(".crystals").append(crystal);
+            crystal.html(random)
+        $(".crystals").append(crystal);
+    }
+
 }
 
-// onClick event for crystals
-$(".crystal").on('click', function () {
+resetAndStart();
+
+
+// onClick event for crystals/ Event Delegation
+$(document).on('click', ".crystal", function () {
     
     var num = parseInt($(this).attr('data-random'));
 
     previous += num;
+
+    $("#previous").html(previous);
+
     console.log(previous);
 
     if(previous > randomResult){
         lose--;
 
         $("#lose").html(lose);
+            previous = 0; 
+
+        $("#previous").html(previous);
+
+            resetAndStart();
     } 
     else if(previous === randomResult){
         win++;
         
         $("#win").html(win);
+
+        $("#previous").html(previous);
+        
+        previous = 0;
+        resetAndStart();
     }
    
 });
