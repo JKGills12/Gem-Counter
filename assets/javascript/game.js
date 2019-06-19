@@ -8,7 +8,7 @@
 
 // GLOBAL VARIABLES
 var randomResult;
-var lose =0;
+var loss =0;
 var win =0;
 var previous = 0;
 
@@ -63,9 +63,9 @@ $(document).on('click', ".crystal", function () {
     console.log(previous);
 
     if(previous > randomResult){
-        lose++;
+        loss++;
 
-        $("#lose").html("You lost: " + lose);
+        $("#loss").html("You lost: " + loss);
             previous = 0; 
 
 

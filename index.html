@@ -22,8 +22,8 @@
 <body>
     <h1>Crystal Collector</h1>
         <br>
-    <div class="container">
-        <h4>Can you beat guess the correct crystal count?</h2>
+    <div id="main">
+        <h3>Can you beat the computer and guess the correct crystal count?</h2>
         <br>
         <p class="rules">Objective:
             <br>
@@ -42,19 +42,22 @@
             You LOSE if your total goes over the random number.
             </p>
         </p>
-    </div>    
+    </div>
     
 <!-- RESULTS -->
-<p id="results"></p>
+        <p id="results"></p>
 
+<!-- SCORE -->
+    <div id="score">
+        <p id="previous"></p>
+        <p id="win">Win: </p>
+        <p id="loss">Loss: </p>
+    </div>
+    
 <!-- CRYSTALS -->
     <div class="crystals"></div>
 
-<!-- SCORE -->
-<p id="previous"></p>
-<p id="win">Win: </p>
-<p id="lose">Lose: </p>
-    
+
 <!-- JAVASCRIPT -->
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
