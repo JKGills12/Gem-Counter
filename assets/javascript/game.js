@@ -32,11 +32,11 @@ var resetAndStart = function () {
                 "data-random": random
             });
 
-            crystal.html(random)
         $(".crystals").append(crystal);
     }
-
+    $("#previous").html("Total Score: " + previous);
 }
+
 
 resetAndStart();
 
@@ -48,27 +48,24 @@ $(document).on('click', ".crystal", function () {
 
     previous += num;
 
-    $("#previous").html(previous);
+    $("#previous").html("Total Score: " + previous);
 
     console.log(previous);
 
     if(previous > randomResult){
         lose--;
 
-        $("#lose").html(lose);
+        $("#lose").html("You lost: " + lose);
             previous = 0; 
 
-        $("#previous").html(previous);
 
             resetAndStart();
     } 
     else if(previous === randomResult){
         win++;
         
-        $("#win").html(win);
+        $("#win").html("You win: " + win);
 
-        $("#previous").html(previous);
-        
         previous = 0;
         resetAndStart();
     }
