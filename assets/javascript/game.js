@@ -8,8 +8,8 @@
 
 // GLOBAL VARIABLES
 var randomResult;
-var lose;
-var win;
+var lose =0;
+var win =0;
 var previous = 0;
 
 randomResult = Math.floor(Math.random() * 69) + 30; 
@@ -28,6 +28,7 @@ for(var i = 0; i < 4; i++) {
             "data-random": random
         });
 
+        crystal.html(random)
     $(".crystals").append(crystal);
 }
 
@@ -37,12 +38,17 @@ $(".crystal").on('click', function () {
     var num = parseInt($(this).attr('data-random'));
 
     previous += num;
+    console.log(previous);
 
     if(previous > randomResult){
-        console.log("Sorry, you lost!");
+        lose--;
+
+        $("#lose").html(lose);
     } 
     else if(previous === randomResult){
-        console.log("Congrats! You win!");
+        win++;
+        
+        $("#win").html(win);
     }
    
 });
