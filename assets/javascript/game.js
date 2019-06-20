@@ -74,7 +74,7 @@ $(document).on('click', ".crystal", function () {
     else if(previous === randomResult){
         win++;
         
-        $("#win").html("You win: " + win);
+        $("#win").html("You won: " + win);
 
         previous = 0;
         resetAndStart();
