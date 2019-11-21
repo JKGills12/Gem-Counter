@@ -12,7 +12,7 @@ The purpose of the game was to have the user click on crystal buttons that rando
 // IF IT IS GREATER THAN THE RANDOM RESULT, THEN WE INCREMENT A LOSS
 // IF IT IS EQUAL, THEN WE INCREMENT A WIN COUNTER
 
-[Gem Counter] https://github.com/JKGills12/unit-4-game.git
+[GitHub] https://github.com/JKGills12/unit-4-game.git
 
-[GitHub] https://jkgills12.github.io/unit-4-game/
+[Gem Counter] https://jkgills12.github.io/unit-4-game/
 
