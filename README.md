@@ -33,7 +33,7 @@ Set up your repository to deploy to Github Pages.
 Push the above changes to GitHub.
 
 
-## Watch the demo.
+## Watch the demo - (https://youtu.be/yNI0l2FMeCk)
 
 
 The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters.
