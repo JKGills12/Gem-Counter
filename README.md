@@ -1,46 +1,25 @@
 # Gem Collector
 
 ## Overview
-I created this fun and interactive game for web browsers that uses HTML and jQuery in order to dynamically run. 
+A fun and interactive game for web browsers that uses HTML and jQuery. The objective of the game is to match the computer's generated number without going over after each click of a crystal.
 
-## Before You Begin
+![screenshot](assets/images/gem-screenshot.jpg)
 
-
-Create a new GitHub repo called unit-4-game, then clone it to your computer.
-
-
-Inside the unit-4-game folder, create an index.html file.
+## Prerequisites
+* Knowledge of HTML/CSS
+* Understanding of JavaScript and jQuery.
 
 
-Still inside the unit-4-game directory, make a folder called assets.
-
-Inside the assets directory, make three additional folders: javascript, css and images.
-
-In the javascript folder, make a file called game.js.
-In the css folder, make a file called style.css.
-In the css folder, make a file called reset.css. Paste into it the code found from the Meyerweb Reset.
-In the images folder, save any of the images you plan on using.
-
-
-
-
-
-Set up your repository to deploy to Github Pages.
-
-
-Push the above changes to GitHub.
-
+## Installing
+1) clone the repo
 
 ## Watch the demo - (https://youtu.be/yNI0l2FMeCk)
 
 
-The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters.
+### How the app works:
 
 
-Here's how the app works:
-
-
-There will be four crystals displayed as buttons on the page.
+Four crystals displayed as buttons on the page.
 
 
 The player will be shown a random number at the start of the game.
@@ -69,8 +48,6 @@ The app should show the number of games the player wins and loses. To that end, 
 
 
 
-
-
 Option 1 Game design notes
 
 
@@ -79,7 +56,8 @@ The random number shown at the start of the game should be between 19 - 120.
 
 Each crystal should have a random hidden value between 1 - 12.
 
-
+## Deployment
+Web app will be deployed using GitHub pages in the settings.
 
 [GitHub] https://github.com/JKGills12/Gem_Counter.git
 
