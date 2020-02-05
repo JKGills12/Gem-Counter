@@ -1,4 +1,4 @@
-# Gem Collector
+# Gem Counter
 
 ## Overview
 A fun and interactive game for web browsers that uses HTML and jQuery. The objective of the game is to match the computer's generated number without going over after each click of a crystal.
