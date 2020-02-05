@@ -59,7 +59,7 @@ Each crystal should have a random hidden value between 1 - 12.
 ## Deployment
 Web app will be deployed using GitHub pages in the settings.
 
-[GitHub] https://github.com/JKGills12/Gem_Counter.git
+[GitHub] https://github.com/JKGills12/Gem-Counter.git
 
-[Gem Counter] https://jkgills12.github.io/Gem_Counter/
+[Gem Counter] https://jkgills12.github.io/Gem-Counter/
 
